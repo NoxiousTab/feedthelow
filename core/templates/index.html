@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('background.jpg'); /* Replace 'background.jpg' with the actual path to your background image */
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        #header {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+        }
+
+        #header a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+        }
+
+        #header a:hover {
+            text-decoration: underline;
+        }
+
+        #welcome {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #000;
+            color: #fff;
+            border-radius: 20px;
+            font-size: 18px;
+            margin: 10px 0;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <a href="#">Home</a>
+        <a href="about">About Us</a>
+        <a href="#">Contact Us</a>
+    </div>
+    <div id="welcome">
+        <h1>Welcome to our website</h1>
+        <a href="login" class="button">Are you a hotel? </a>
+        <a href="login" class="button">Are you a volunteer? </a>
+    </div>
+</body>
+</html>
