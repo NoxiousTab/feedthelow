@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <div class="container">
+        <form method="post" class="form">
+            {% csrf_token %}
+            <div class="input-group">
+                {{ form.username.label_tag }}
+                {{ form.username }}
+            </div>
+            <div class="input-group">
+                {{ form.password.label_tag }}
+                {{ form.password }}
+            </div>
+            <button type="submit" class="btn btn-black">Login</button>
+        </form>
+    </div>
+</body>
+</html>

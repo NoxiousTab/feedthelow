@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register</title>
+    <link rel="stylesheet" type="text/css" href="{% load static 'style.css' %}">
+</head>
+<body>
+    <div class="container">
+        <form method="post" class="form">
+            {% csrf_token %}
+            <div class="input-group">
+                {{ form.username.label_tag }}
+                {{ form.username }}
+            </div>
+            <div class="input-group">
+                {{ form.password1.label_tag }}
+                {{ form.password1 }}
+            </div>
+            <div class="input-group">
+                {{ form.password2.label_tag }}
+                {{ form.password2 }}
+            </div>
+            <button type="submit" class="btn btn-black">Register</button>
+        </form>
+    </div>
+</body>
+</html>
